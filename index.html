@@ -6,33 +6,48 @@
   <style>
     body {
       font-family: sans-serif;
-      max-width: 700px;
+      max-width: 900px;
       margin: 5rem auto;
       padding: 2rem;
       line-height: 1.6;
       background-color: #f9f9f9;
       color: #333;
     }
+
+    .intro {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    img.profile {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #ccc;
+      flex-shrink: 0;
+    }
+
     h1, h2 {
       color: #2c3e50;
+      margin-top: 0;
     }
-    img.profile {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #ccc;
-      margin-bottom: 1rem;
-    }
+
     ul {
       padding-left: 1.2rem;
     }
   </style>
 </head>
 <body>
-  <img src="assets/portrait.jpg" alt="Albus Fang Profile Photo" class="profile">
-  <h1>Hello, I'm Albus Fang</h1>
-  <p>I'm an Autonomous Systems Engineer passionate about autonomy, control systems, and robotics. I build intelligent vehicles and simulations, and I’m working on making the future of construction autonomous.</p>
+  <div class="intro">
+    <img src="assets/profile.jpg" alt="Albus Fang Profile Photo" class="profile">
+    <div>
+      <h1>Hello, I'm Albus Fang</h1>
+      <p>I'm an Autonomous Systems Engineer passionate about autonomy, control systems, and robotics. I build intelligent vehicles and simulations, and I’m working on making the future of construction autonomous.</p>
+    </div>
+  </div>
 
   <h2>Accomplishments</h2>
   <ul>
